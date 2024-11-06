@@ -15,6 +15,7 @@ export const Button = ({
       className={className}
       type={type ?? "button"}
       disabled={disabled}
+      aria-label={children.toString()}
     >
       {children}
     </StyledButton>
