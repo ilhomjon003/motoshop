@@ -20,5 +20,5 @@ export const getBase64 = (file: File): Promise<string> => {
 };
 
 export function getFormattedLink(link: string): string {
-  return link.split(" ").join("-");
+  return link.split(" ").join("-").replace(/[,':.$@!%^*]/, "");
 }

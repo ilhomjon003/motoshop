@@ -78,7 +78,7 @@ const Card = (props: ICard) => {
 
   return (
     <CardStyle>
-      <Link to={`${ADS}/${getFormattedLink(title)}?id=${_id}`}>
+      <Link to={`${ADS}/${getFormattedLink(title + location)}?id=${_id}`}>
         <div className="img__wrp">
           <LazyImage className="card__img" src={images[0]} alt={title} />
           <div className="icons">

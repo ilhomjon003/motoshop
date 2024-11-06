@@ -37,12 +37,14 @@ const Carousel = ({ items, title, isLoading }: props) => {
         <div className="flex">
           <button
             className="swiper__icon"
+            aria-label="ortga qaytarish knopkasi"
             onClick={() => swiperRef.current.slidePrev()}
           >
             <HiOutlineChevronLeft />
           </button>
           <button
             className="swiper__icon"
+            aria-label="oldinga o'tkazish knopkasi"
             onClick={() => swiperRef.current.slideNext()}
           >
             <HiOutlineChevronRight />
